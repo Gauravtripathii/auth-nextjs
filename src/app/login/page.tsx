@@ -18,6 +18,7 @@ export default function LoginPage() {
       <hr />
       <p className="m-2">
         <input
+          className="text-black"
           type="text"
           id="email"
           value={user.email}
@@ -27,6 +28,7 @@ export default function LoginPage() {
       </p>
       <p className="m-2">
         <input
+          className="text-black"
           type="password"
           id="password"
           value={user.password}
@@ -35,7 +37,7 @@ export default function LoginPage() {
         />
       </p>
       <p className="m-2">
-        Don't have an account? <Link href='/signup'>Signup</Link>
+        Don't have an account? <Link href="/signup">Signup</Link>
       </p>
       <p className="m-3">
         <button onClick={onLogin}>Login</button>

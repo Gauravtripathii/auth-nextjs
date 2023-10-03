@@ -19,6 +19,7 @@ export default function SignupPage() {
       <hr />
       <p className="m-2">
         <input
+          className="text-black"
           type="text"
           id="username"
           value={user.username}
@@ -28,6 +29,7 @@ export default function SignupPage() {
       </p>
       <p className="m-2">
         <input
+          className="text-black"
           type="text"
           id="email"
           value={user.email}
@@ -37,6 +39,7 @@ export default function SignupPage() {
       </p>
       <p className="m-2">
         <input
+          className="text-black"
           type="password"
           id="password"
           value={user.password}
