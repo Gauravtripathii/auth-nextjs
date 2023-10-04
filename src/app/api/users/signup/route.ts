@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
         const reqBody = await request.json();
         const {username, email, password} = reqBody;
 
-        console.log(reqBody);
+        // console.log(reqBody);
 
         // to check if the user already exists
         const user = await User.findOne({email});
@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
         const newUser = new User({username, email, password: hashedPassword});
         const savedUser = await newUser.save();
 
-        console.log(savedUser);
+        // console.log(savedUser);
 
         return NextResponse.json({
             message: "User saved successfully",
