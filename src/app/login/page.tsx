@@ -19,7 +19,7 @@ export default function LoginPage() {
     try {
       setLoading(true);
       const response = await axios.post("/api/users/login", user);
-      // console.log("Signup success!", response.data);
+      // console.log("Login success!", response.data);
       router.push("/profile");
     } catch (error: any) {
       console.log("Login failed!", error.message);
@@ -38,7 +38,9 @@ export default function LoginPage() {
   return (
     <>
       {loading ? (
-        <h1>Loading...</h1>
+        <div className="flex flex-col items-center justify-center min-h-screen py-2">
+          <h1>Processing...</h1>
+        </div>
       ) : (
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
           <h1>Login to your account</h1>

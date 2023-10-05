@@ -43,7 +43,9 @@ export default function SignupPage() {
   return (
     <>
       {loading ? (
-        <h1>Processing...</h1>
+        <div className="flex flex-col items-center justify-center min-h-screen py-2">
+          <h1>Processing...</h1>
+        </div>
       ) : (
         <div className="flex flex-col items-center justify-center min-h-screen py-2">
           <h1>Create your account</h1>
