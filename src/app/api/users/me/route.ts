@@ -2,7 +2,7 @@ import { getDataFromToken } from "@/helpers/getDataFromToken";
 import {
   NextRequest,
   NextResponse,
-} from "../../../../../node_modules/next/server";
+} from "next/server";
 import User from "@/models/userModel";
 import { connect } from "@/dbConfig/dbConfig";
 
