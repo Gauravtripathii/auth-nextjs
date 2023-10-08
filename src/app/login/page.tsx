@@ -28,6 +28,10 @@ export default function LoginPage() {
     }
   };
 
+  const forgotPasswordHandler = async () => {
+    await axios.post('/api/users/forgotpassword', {email: user.email});
+  }
+
   useEffect(() => {
     if (user.email.length > 0 && user.password.length > 0) {
       setButtonDisabled(false);
@@ -72,6 +76,9 @@ export default function LoginPage() {
             <button onClick={onLogin}>
               {buttonDisabled ? "no Login" : "Login"}
             </button>
+          </p>
+          <p>
+            <button onClick={forgotPasswordHandler}>Forgot Password</button>
           </p>
         </div>
       )}
