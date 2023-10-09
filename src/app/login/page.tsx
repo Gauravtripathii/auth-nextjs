@@ -29,8 +29,8 @@ export default function LoginPage() {
   };
 
   const forgotPasswordHandler = async () => {
-    await axios.post('/api/users/forgotpassword', {email: user.email});
-  }
+    await axios.post("/api/users/forgotpassword", { email: user.email });
+  };
 
   useEffect(() => {
     if (user.email.length > 0 && user.password.length > 0) {
