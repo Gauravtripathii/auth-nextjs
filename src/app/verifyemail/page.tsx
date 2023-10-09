@@ -26,7 +26,8 @@ export default function VerifyEmailPage() {
 
   useEffect(() => {
     if (token.length > 0) verifyUserEmail();
-  }, [token, verifyUserEmail]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [token]);
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <h1 className="text-4xl">Verify Your Email</h1>

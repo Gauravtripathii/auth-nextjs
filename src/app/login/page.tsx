@@ -70,7 +70,7 @@ export default function LoginPage() {
             />
           </p>
           <p className="m-2">
-            Don't have an account? <Link href="/signup">Signup</Link>
+            Don&apos;t have an account? <Link href="/signup">Signup</Link>
           </p>
           <p className="m-3">
             <button onClick={onLogin}>
