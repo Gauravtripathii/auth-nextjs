@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import "dotenv/config";
 export async function connect() {
     try {
-        mongoose.connect(process.env.MONGO_URI?.toString()!);
+        mongoose.connect(process.env.MONGO_URI!.toString());
         const connection = mongoose.connection;
 
         connection.on('connected', ()=>{
